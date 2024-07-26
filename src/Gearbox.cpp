@@ -41,7 +41,7 @@ State getState(const Gearbox* gearbox) {
 	}
 }
 
-Gearbox* getGearbBox(bool posState, bool negState, uint8_t posPin, uint8_t negPin) {
+Gearbox* getGearbox(bool posState, bool negState, uint8_t posPin, uint8_t negPin) {
     Gearbox* tmp = (Gearbox*)malloc(sizeof(Gearbox));
 	tmp->posState = posState;
 	tmp->negState = negState;
