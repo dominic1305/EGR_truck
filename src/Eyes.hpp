@@ -1,12 +1,13 @@
 #pragma once
 
-typedef struct {
+typedef struct Sensor {
 	uint8_t trig;
 	uint8_t echo;
-} Sensor;
+	float* storage;
+};
 
 Sensor* getSensor(uint8_t trig, uint8_t echo);
 
 float getDistance(const Sensor* sensor);
 
-bool getDistance(const Sensor* sensor, float threshold, bool inclusive = false);
+bool withinThreshold(const Sensor* sensor, float threshold, bool inclusive = false);

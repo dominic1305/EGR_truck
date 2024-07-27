@@ -2,12 +2,12 @@
 
 enum class State : uint8_t { STOP, REVERSE, FORWARD };
 
-typedef struct {
+typedef struct Gearbox {
 	bool posState;
 	bool negState;
 	uint8_t posPin;
 	uint8_t negPin;
-} Gearbox;
+};
 
 Gearbox* getGearbox(bool posState, bool negState, uint8_t posPin, uint8_t negPin);
 
