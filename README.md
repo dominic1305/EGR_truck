@@ -1,5 +1,6 @@
 # Components List
 
+* 150186 dc motor (x1)
 * XC4419 5V relay (x2)
 * HC-SR04 (x1)
 * Arduino UNO (x1)
